@@ -66,6 +66,7 @@
             this.toolStripButtonCentralize = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRightAlign = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -105,8 +106,9 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
+            this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
             // enregistrerToolStripMenuItem
             // 
@@ -275,6 +277,7 @@
             this.toolStripButtonOpenFile.Name = "toolStripButtonOpenFile";
             this.toolStripButtonOpenFile.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonOpenFile.Text = "Ouvrir";
+            this.toolStripButtonOpenFile.Click += new System.EventHandler(this.toolStripButtonOpenFile_Click);
             // 
             // toolStripButtonSaveFile
             // 
@@ -383,6 +386,12 @@
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "(*.txt)|*.txt";
+            this.openFileDialog1.InitialDirectory = "Documents";
+            this.openFileDialog1.Title = "Ouvrir";
+            // 
             // TextEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,6 +455,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonCentralize;
         private System.Windows.Forms.ToolStripButton toolStripButtonRightAlign;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
