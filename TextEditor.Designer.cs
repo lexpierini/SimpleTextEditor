@@ -98,8 +98,9 @@
             // nouveauToolStripMenuItem
             // 
             this.nouveauToolStripMenuItem.Name = "nouveauToolStripMenuItem";
-            this.nouveauToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.nouveauToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nouveauToolStripMenuItem.Text = "Nouveau";
+            this.nouveauToolStripMenuItem.Click += new System.EventHandler(this.nouveauToolStripMenuItem_Click);
             // 
             // ouvrirToolStripMenuItem
             // 
@@ -264,6 +265,7 @@
             this.toolStripButtonNewFile.Name = "toolStripButtonNewFile";
             this.toolStripButtonNewFile.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonNewFile.Text = "Nouveau";
+            this.toolStripButtonNewFile.Click += new System.EventHandler(this.toolStripButtonNewFile_Click);
             // 
             // toolStripButtonOpenFile
             // 

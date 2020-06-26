@@ -16,5 +16,26 @@ namespace SimpleTextEditor
         {
             InitializeComponent();
         }
+
+        //***** Methods *****//
+        private void NewFile()
+        {
+            richTextBox1.Clear();
+            richTextBox1.Focus();
+        }
+
+
+        //***** MenuStrip methods *****//
+        private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewFile();
+        }
+
+
+        //***** ToolStrip methods *****//
+        private void toolStripButtonNewFile_Click(object sender, EventArgs e)
+        {
+            NewFile();
+        }
     }
 }
