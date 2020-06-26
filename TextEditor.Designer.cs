@@ -67,6 +67,9 @@
             this.toolStripButtonRightAlign = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -113,8 +116,9 @@
             // enregistrerToolStripMenuItem
             // 
             this.enregistrerToolStripMenuItem.Name = "enregistrerToolStripMenuItem";
-            this.enregistrerToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.enregistrerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.enregistrerToolStripMenuItem.Text = "Enregistrer";
+            this.enregistrerToolStripMenuItem.Click += new System.EventHandler(this.enregistrerToolStripMenuItem_Click);
             // 
             // imprimerToolStripMenuItem
             // 
@@ -287,6 +291,7 @@
             this.toolStripButtonSaveFile.Name = "toolStripButtonSaveFile";
             this.toolStripButtonSaveFile.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonSaveFile.Text = "Enregistrer";
+            this.toolStripButtonSaveFile.Click += new System.EventHandler(this.toolStripButtonSaveFile_Click);
             // 
             // toolStripButtonPrintFile
             // 
@@ -392,6 +397,20 @@
             this.openFileDialog1.InitialDirectory = "Documents";
             this.openFileDialog1.Title = "Ouvrir";
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "file";
+            this.saveFileDialog1.Filter = "(*.txt)|*.txt";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.Document = this.printDocument1;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // TextEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,6 +475,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonRightAlign;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

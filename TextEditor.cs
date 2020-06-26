@@ -33,16 +33,16 @@ namespace SimpleTextEditor
                 {
                     using (FileStream file = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read))
                     {
-                        using (StreamReader streamReader = new StreamReader(file))
+                        using (StreamReader reader = new StreamReader(file))
                         {
-                            streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
+                            reader.BaseStream.Seek(0, SeekOrigin.Begin);
                             richTextBox1.Clear();
 
-                            string line = streamReader.ReadLine();
+                            string line = reader.ReadLine();
                             while (line != null)
                             {
                                 richTextBox1.Text += line + "\n";
-                                line = streamReader.ReadLine();
+                                line = reader.ReadLine();
                             }
                         }
                     }
@@ -52,6 +52,30 @@ namespace SimpleTextEditor
                     MessageBox.Show($"Une erreur est survenue: {e.Message}", "Erreur de lecture", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }            
+        }
+
+        private void SaveFile()
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (FileStream file = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write))
+                    {
+                        using (StreamWriter writer = new StreamWriter(file))
+                        {
+                            writer.Flush();
+                            writer.BaseStream.Seek(0, SeekOrigin.Begin);
+                            writer.Write(richTextBox1.Text);
+                            writer.Flush();
+                        }
+                    }
+                }
+                catch (IOException e)
+                {
+                    MessageBox.Show($"Une erreur est survenue: {e.Message}", "Erreur d'enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
 
@@ -66,6 +90,11 @@ namespace SimpleTextEditor
             OpenFile();
         }
 
+        private void enregistrerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFile();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -77,5 +106,12 @@ namespace SimpleTextEditor
         {
             OpenFile();
         }
+
+        private void toolStripButtonSaveFile_Click(object sender, EventArgs e)
+        {
+            SaveFile();
+        }
+
+
     }
 }
