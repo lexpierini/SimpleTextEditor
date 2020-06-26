@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_file_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-file_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italic_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_text_alignment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\central_text_alignment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_text_alignment %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
