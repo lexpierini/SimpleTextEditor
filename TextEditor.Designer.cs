@@ -123,8 +123,9 @@
             // imprimerToolStripMenuItem
             // 
             this.imprimerToolStripMenuItem.Name = "imprimerToolStripMenuItem";
-            this.imprimerToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.imprimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimerToolStripMenuItem.Text = "Imprimer";
+            this.imprimerToolStripMenuItem.Click += new System.EventHandler(this.imprimerToolStripMenuItem_Click);
             // 
             // fermerToolStripMenuItem
             // 
@@ -301,6 +302,7 @@
             this.toolStripButtonPrintFile.Name = "toolStripButtonPrintFile";
             this.toolStripButtonPrintFile.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonPrintFile.Text = "Imprimer";
+            this.toolStripButtonPrintFile.Click += new System.EventHandler(this.toolStripButtonPrintFile_Click);
             // 
             // toolStripButtonCropText
             // 

@@ -13,6 +13,8 @@ namespace SimpleTextEditor
 {
     public partial class TextEditor : Form
     {
+        StringReader reading = null; // Used in printing methods.
+
         public TextEditor()
         {
             InitializeComponent();
@@ -78,6 +80,61 @@ namespace SimpleTextEditor
             }
         }
 
+        private void PrintText()
+        {
+            string text = richTextBox1.Text;
+
+            using (reading = new StringReader(text))
+            {
+                if (printDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    printDocument1.Print();
+                }
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            float totalLine = 0;
+            float positionY = 0;
+            int counter = 0;
+            float leftMargin = e.MarginBounds.Left - 50;
+            float topMargin = e.MarginBounds.Top - 50;
+
+            if (leftMargin < 5)
+            {
+                leftMargin = 20;
+            }
+            if (topMargin < 5)
+            {
+                topMargin = 20;
+            }
+
+            Font font = richTextBox1.Font;
+            SolidBrush brush = new SolidBrush(Color.Black);
+            totalLine = e.MarginBounds.Height / font.GetHeight(e.Graphics);
+            string line = reading.ReadLine();
+
+            while (counter < totalLine)
+            {
+                positionY = topMargin + (counter * font.GetHeight(e.Graphics));
+                e.Graphics.DrawString(line, font, brush, topMargin, positionY, new StringFormat());
+                counter++;
+                line = reading.ReadLine();
+
+                if (line != null)
+                {
+                    e.HasMorePages = true;
+                }
+                else
+                {
+                    e.HasMorePages = false;
+                }
+
+                brush.Dispose();
+            }
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -93,6 +150,11 @@ namespace SimpleTextEditor
         private void enregistrerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFile();
+        }
+
+        private void imprimerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrintText();
         }
 
 
@@ -112,6 +174,9 @@ namespace SimpleTextEditor
             SaveFile();
         }
 
-
+        private void toolStripButtonPrintFile_Click(object sender, EventArgs e)
+        {
+            PrintText();
+        }
     }
 }
