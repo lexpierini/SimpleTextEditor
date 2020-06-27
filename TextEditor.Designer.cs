@@ -179,8 +179,9 @@
             // grasToolStripMenuItem
             // 
             this.grasToolStripMenuItem.Name = "grasToolStripMenuItem";
-            this.grasToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.grasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grasToolStripMenuItem.Text = "Gras";
+            this.grasToolStripMenuItem.Click += new System.EventHandler(this.grasToolStripMenuItem_Click);
             // 
             // italiqueToolStripMenuItem
             // 
@@ -341,6 +342,7 @@
             this.toolStripButtonBold.Name = "toolStripButtonBold";
             this.toolStripButtonBold.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonBold.Text = "Gras";
+            this.toolStripButtonBold.Click += new System.EventHandler(this.toolStripButtonBold_Click);
             // 
             // toolStripButtonItalic
             // 
