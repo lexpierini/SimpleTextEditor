@@ -157,6 +157,14 @@ namespace SimpleTextEditor
             PrintText();
         }
 
+        private void fermerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Voulez-vous vraiment sortir?", "Fermer", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -178,5 +186,7 @@ namespace SimpleTextEditor
         {
             PrintText();
         }
+
+
     }
 }
