@@ -161,8 +161,9 @@
             // collerToolStripMenuItem
             // 
             this.collerToolStripMenuItem.Name = "collerToolStripMenuItem";
-            this.collerToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.collerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.collerToolStripMenuItem.Text = "Coller";
+            this.collerToolStripMenuItem.Click += new System.EventHandler(this.collerToolStripMenuItem_Click);
             // 
             // formatToolStripMenuItem
             // 
@@ -325,6 +326,7 @@
             this.toolStripButtonPasteText.Name = "toolStripButtonPasteText";
             this.toolStripButtonPasteText.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonPasteText.Text = "Coller";
+            this.toolStripButtonPasteText.Click += new System.EventHandler(this.toolStripButtonPasteText_Click);
             // 
             // toolStripSeparator2
             // 

@@ -151,6 +151,14 @@ namespace SimpleTextEditor
             }
         }
 
+        private void PasteSelection()
+        {
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Paste();
+            }
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -191,6 +199,11 @@ namespace SimpleTextEditor
             CopySelection();
         }
 
+        private void collerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PasteSelection();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -221,6 +234,11 @@ namespace SimpleTextEditor
         private void toolStripButtonCopyText_Click(object sender, EventArgs e)
         {
             CopySelection();
+        }
+
+        private void toolStripButtonPasteText_Click(object sender, EventArgs e)
+        {
+            PasteSelection();
         }
     }
 }
