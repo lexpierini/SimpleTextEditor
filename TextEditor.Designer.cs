@@ -154,8 +154,9 @@
             // copierToolStripMenuItem
             // 
             this.copierToolStripMenuItem.Name = "copierToolStripMenuItem";
-            this.copierToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.copierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copierToolStripMenuItem.Text = "Copier";
+            this.copierToolStripMenuItem.Click += new System.EventHandler(this.copierToolStripMenuItem_Click);
             // 
             // collerToolStripMenuItem
             // 
@@ -314,6 +315,7 @@
             this.toolStripButtonCopyText.Name = "toolStripButtonCopyText";
             this.toolStripButtonCopyText.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonCopyText.Text = "Copier";
+            this.toolStripButtonCopyText.Click += new System.EventHandler(this.toolStripButtonCopyText_Click);
             // 
             // toolStripButtonPasteText
             // 
