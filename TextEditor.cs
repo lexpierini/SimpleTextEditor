@@ -135,6 +135,14 @@ namespace SimpleTextEditor
             }
         }
 
+        private void CropSelection()
+        {
+            if (richTextBox1.SelectionLength > 0)
+            {
+                richTextBox1.Cut();
+            }
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,6 +173,11 @@ namespace SimpleTextEditor
             }
         }
 
+        private void couToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CropSelection();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -187,6 +200,9 @@ namespace SimpleTextEditor
             PrintText();
         }
 
-
+        private void toolStripButtonCropText_Click(object sender, EventArgs e)
+        {
+            CropSelection();
+        }
     }
 }

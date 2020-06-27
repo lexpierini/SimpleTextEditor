@@ -147,8 +147,9 @@
             // couToolStripMenuItem
             // 
             this.couToolStripMenuItem.Name = "couToolStripMenuItem";
-            this.couToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.couToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.couToolStripMenuItem.Text = "Couper";
+            this.couToolStripMenuItem.Click += new System.EventHandler(this.couToolStripMenuItem_Click);
             // 
             // copierToolStripMenuItem
             // 
@@ -303,6 +304,7 @@
             this.toolStripButtonCropText.Name = "toolStripButtonCropText";
             this.toolStripButtonCropText.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonCropText.Text = "Couper";
+            this.toolStripButtonCropText.Click += new System.EventHandler(this.toolStripButtonCropText_Click);
             // 
             // toolStripButtonCopyText
             // 
