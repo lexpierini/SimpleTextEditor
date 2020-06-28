@@ -103,6 +103,36 @@ namespace SimpleTextEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GitHub {
+            get {
+                object obj = ResourceManager.GetObject("GitHub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GitHub_Mark_120px_plus {
+            get {
+                object obj = ResourceManager.GetObject("GitHub-Mark-120px-plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GitHub_Mark_32px {
+            get {
+                object obj = ResourceManager.GetObject("GitHub-Mark-32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap italic_icon {
             get {
                 object obj = ResourceManager.GetObject("italic_icon", resourceCulture);
@@ -116,6 +146,36 @@ namespace SimpleTextEditor.Properties {
         internal static System.Drawing.Bitmap left_text_alignment__2_ {
             get {
                 object obj = ResourceManager.GetObject("left_text_alignment (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LI_In_Bug {
+            get {
+                object obj = ResourceManager.GetObject("LI-In-Bug", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LinkedIn {
+            get {
+                object obj = ResourceManager.GetObject("LinkedIn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Alex___72dpi {
+            get {
+                object obj = ResourceManager.GetObject("Logo Alex - 72dpi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

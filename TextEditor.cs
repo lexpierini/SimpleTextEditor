@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace SimpleTextEditor
 {
-    public partial class TextEditor : Form
+    public partial class F_TextEditor : Form
     {
         StringReader reading = null; // Used in printing methods.
 
-        public TextEditor()
+        public F_TextEditor()
         {
             InitializeComponent();
         }
@@ -387,6 +387,12 @@ namespace SimpleTextEditor
             RightAlign();
         }
 
+        private void àProposToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            F_About f_About = new F_About();
+            f_About.ShowDialog();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -453,5 +459,7 @@ namespace SimpleTextEditor
         {
             RightAlign();
         }
+
+
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="F_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_About.Designer.cs">
+      <DependentUpon>F_About.cs</DependentUpon>
+    </Compile>
     <Compile Include="TextEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F_About.resx">
+      <DependentUpon>F_About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TextEditor.resx">
       <DependentUpon>TextEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +127,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right_text_alignment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Alex - 72dpi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinkedIn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub-Mark-120px-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub-Mark-32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LI-In-Bug.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

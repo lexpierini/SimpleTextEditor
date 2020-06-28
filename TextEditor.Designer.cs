@@ -1,6 +1,6 @@
 ﻿namespace SimpleTextEditor
 {
-    partial class TextEditor
+    partial class F_TextEditor
     {
         /// <summary>
         /// Required designer variable.
@@ -49,27 +49,28 @@
             this.droiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.àProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonNewFile = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonOpenFile = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonSaveFile = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPrintFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonCropText = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonCopyText = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPasteText = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonBold = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonItalic = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonUnderline = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonLeftAlign = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonCentralize = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRightAlign = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.àProposToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButtonNewFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonOpenFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonSaveFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonPrintFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonCropText = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonCopyText = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonPasteText = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonBold = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonItalic = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonUnderline = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonLeftAlign = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonCentralize = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRightAlign = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -179,21 +180,21 @@
             // grasToolStripMenuItem
             // 
             this.grasToolStripMenuItem.Name = "grasToolStripMenuItem";
-            this.grasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grasToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.grasToolStripMenuItem.Text = "Gras";
             this.grasToolStripMenuItem.Click += new System.EventHandler(this.grasToolStripMenuItem_Click);
             // 
             // italiqueToolStripMenuItem
             // 
             this.italiqueToolStripMenuItem.Name = "italiqueToolStripMenuItem";
-            this.italiqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.italiqueToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.italiqueToolStripMenuItem.Text = "Italique";
             this.italiqueToolStripMenuItem.Click += new System.EventHandler(this.italiqueToolStripMenuItem_Click);
             // 
             // soulignéToolStripMenuItem
             // 
             this.soulignéToolStripMenuItem.Name = "soulignéToolStripMenuItem";
-            this.soulignéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.soulignéToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.soulignéToolStripMenuItem.Text = "Souligné";
             this.soulignéToolStripMenuItem.Click += new System.EventHandler(this.soulignéToolStripMenuItem_Click);
             // 
@@ -204,35 +205,37 @@
             this.centréToolStripMenuItem,
             this.droiteToolStripMenuItem});
             this.alignementToolStripMenuItem.Name = "alignementToolStripMenuItem";
-            this.alignementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alignementToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.alignementToolStripMenuItem.Text = "Alignement";
             // 
             // gaucheToolStripMenuItem
             // 
             this.gaucheToolStripMenuItem.Name = "gaucheToolStripMenuItem";
-            this.gaucheToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gaucheToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.gaucheToolStripMenuItem.Text = "Gauche";
             this.gaucheToolStripMenuItem.Click += new System.EventHandler(this.gaucheToolStripMenuItem_Click);
             // 
             // centréToolStripMenuItem
             // 
             this.centréToolStripMenuItem.Name = "centréToolStripMenuItem";
-            this.centréToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.centréToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.centréToolStripMenuItem.Text = "Centré";
             this.centréToolStripMenuItem.Click += new System.EventHandler(this.centréToolStripMenuItem_Click);
             // 
             // droiteToolStripMenuItem
             // 
             this.droiteToolStripMenuItem.Name = "droiteToolStripMenuItem";
-            this.droiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.droiteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.droiteToolStripMenuItem.Text = "Droite";
             this.droiteToolStripMenuItem.Click += new System.EventHandler(this.droiteToolStripMenuItem_Click);
             // 
             // àProposToolStripMenuItem
             // 
+            this.àProposToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.àProposToolStripMenuItem1});
             this.àProposToolStripMenuItem.Name = "àProposToolStripMenuItem";
-            this.àProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.àProposToolStripMenuItem.Text = "À propos";
+            this.àProposToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.àProposToolStripMenuItem.Text = "Aide";
             // 
             // toolStrip1
             // 
@@ -258,6 +261,56 @@
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(12, 52);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(776, 386);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "(*.txt)|*.txt";
+            this.openFileDialog1.InitialDirectory = "Documents";
+            this.openFileDialog1.Title = "Ouvrir";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "file";
+            this.saveFileDialog1.Filter = "(*.txt)|*.txt";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.Document = this.printDocument1;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // àProposToolStripMenuItem1
+            // 
+            this.àProposToolStripMenuItem1.Name = "àProposToolStripMenuItem1";
+            this.àProposToolStripMenuItem1.Size = new System.Drawing.Size(223, 22);
+            this.àProposToolStripMenuItem1.Text = "À propos du Éditeur de texte";
+            this.àProposToolStripMenuItem1.Click += new System.EventHandler(this.àProposToolStripMenuItem1_Click);
             // 
             // toolStripButtonNewFile
             // 
@@ -299,11 +352,6 @@
             this.toolStripButtonPrintFile.Text = "Imprimer";
             this.toolStripButtonPrintFile.Click += new System.EventHandler(this.toolStripButtonPrintFile_Click);
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
             // toolStripButtonCropText
             // 
             this.toolStripButtonCropText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -333,11 +381,6 @@
             this.toolStripButtonPasteText.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonPasteText.Text = "Coller";
             this.toolStripButtonPasteText.Click += new System.EventHandler(this.toolStripButtonPasteText_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButtonBold
             // 
@@ -369,11 +412,6 @@
             this.toolStripButtonUnderline.Text = "Souligné";
             this.toolStripButtonUnderline.Click += new System.EventHandler(this.toolStripButtonUnderline_Click);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
             // toolStripButtonLeftAlign
             // 
             this.toolStripButtonLeftAlign.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -404,35 +442,7 @@
             this.toolStripButtonRightAlign.Text = "Aligner à doite";
             this.toolStripButtonRightAlign.Click += new System.EventHandler(this.toolStripButtonRightAlign_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 52);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(776, 386);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.Filter = "(*.txt)|*.txt";
-            this.openFileDialog1.InitialDirectory = "Documents";
-            this.openFileDialog1.Title = "Ouvrir";
-            // 
-            // saveFileDialog1
-            // 
-            this.saveFileDialog1.DefaultExt = "file";
-            this.saveFileDialog1.Filter = "(*.txt)|*.txt";
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.Document = this.printDocument1;
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // TextEditor
+            // F_TextEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -443,7 +453,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "TextEditor";
+            this.Name = "F_TextEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Éditeur de texte";
             this.menuStrip1.ResumeLayout(false);
@@ -499,6 +509,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.ToolStripMenuItem àProposToolStripMenuItem1;
     }
 }
 

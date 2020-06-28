@@ -16,7 +16,7 @@ namespace SimpleTextEditor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TextEditor());
+            Application.Run(new F_TextEditor());
         }
     }
 }
