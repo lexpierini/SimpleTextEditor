@@ -210,8 +210,9 @@
             // gaucheToolStripMenuItem
             // 
             this.gaucheToolStripMenuItem.Name = "gaucheToolStripMenuItem";
-            this.gaucheToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.gaucheToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gaucheToolStripMenuItem.Text = "Gauche";
+            this.gaucheToolStripMenuItem.Click += new System.EventHandler(this.gaucheToolStripMenuItem_Click);
             // 
             // centréToolStripMenuItem
             // 
@@ -379,6 +380,7 @@
             this.toolStripButtonLeftAlign.Name = "toolStripButtonLeftAlign";
             this.toolStripButtonLeftAlign.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonLeftAlign.Text = "Aligner à gauche";
+            this.toolStripButtonLeftAlign.Click += new System.EventHandler(this.toolStripButtonLeftAlign_Click);
             // 
             // toolStripButtonCentralize
             // 

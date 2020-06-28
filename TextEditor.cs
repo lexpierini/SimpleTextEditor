@@ -297,6 +297,11 @@ namespace SimpleTextEditor
             }
         }
 
+        private void LeftAlign()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -357,6 +362,11 @@ namespace SimpleTextEditor
             UnderlineText();
         }
 
+        private void gaucheToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LeftAlign();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -407,6 +417,11 @@ namespace SimpleTextEditor
         private void toolStripButtonUnderline_Click(object sender, EventArgs e)
         {
             UnderlineText();
+        }
+
+        private void toolStripButtonLeftAlign_Click(object sender, EventArgs e)
+        {
+            LeftAlign();
         }
     }
 }
