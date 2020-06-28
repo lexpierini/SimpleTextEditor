@@ -224,8 +224,9 @@
             // droiteToolStripMenuItem
             // 
             this.droiteToolStripMenuItem.Name = "droiteToolStripMenuItem";
-            this.droiteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.droiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.droiteToolStripMenuItem.Text = "Droite";
+            this.droiteToolStripMenuItem.Click += new System.EventHandler(this.droiteToolStripMenuItem_Click);
             // 
             // àProposToolStripMenuItem
             // 
@@ -401,6 +402,7 @@
             this.toolStripButtonRightAlign.Name = "toolStripButtonRightAlign";
             this.toolStripButtonRightAlign.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonRightAlign.Text = "Aligner à doite";
+            this.toolStripButtonRightAlign.Click += new System.EventHandler(this.toolStripButtonRightAlign_Click);
             // 
             // richTextBox1
             // 

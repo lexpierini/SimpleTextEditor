@@ -307,6 +307,11 @@ namespace SimpleTextEditor
             richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
         }
 
+        private void RightAlign()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -377,6 +382,11 @@ namespace SimpleTextEditor
             CenterAlign();
         }
 
+        private void droiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RightAlign();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -437,6 +447,11 @@ namespace SimpleTextEditor
         private void toolStripButtonCentralize_Click(object sender, EventArgs e)
         {
             CenterAlign();
+        }
+
+        private void toolStripButtonRightAlign_Click(object sender, EventArgs e)
+        {
+            RightAlign();
         }
     }
 }
