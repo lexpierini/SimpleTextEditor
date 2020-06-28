@@ -195,6 +195,7 @@
             this.soulignéToolStripMenuItem.Name = "soulignéToolStripMenuItem";
             this.soulignéToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.soulignéToolStripMenuItem.Text = "Souligné";
+            this.soulignéToolStripMenuItem.Click += new System.EventHandler(this.soulignéToolStripMenuItem_Click);
             // 
             // alignementToolStripMenuItem
             // 
@@ -363,6 +364,7 @@
             this.toolStripButtonUnderline.Name = "toolStripButtonUnderline";
             this.toolStripButtonUnderline.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonUnderline.Text = "Souligné";
+            this.toolStripButtonUnderline.Click += new System.EventHandler(this.toolStripButtonUnderline_Click);
             // 
             // toolStripSeparator3
             // 
