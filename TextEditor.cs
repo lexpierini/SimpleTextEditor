@@ -205,6 +205,52 @@ namespace SimpleTextEditor
             }
         }
 
+        private void ItalicText()
+        {
+            string fontName = richTextBox1.Font.Name;
+            float fontSize = richTextBox1.Font.Size;
+            bool isInBold = richTextBox1.SelectionFont.Bold;
+            bool isInItalic = richTextBox1.SelectionFont.Italic;
+            bool isInUnderlined = richTextBox1.SelectionFont.Underline;
+
+            richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Regular);
+
+            if (isInItalic == false)
+            {
+                if (isInBold == true && isInUnderlined == true)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Italic | FontStyle.Bold | FontStyle.Underline);
+                }
+                else if (isInBold == false && isInUnderlined == true)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Italic | FontStyle.Underline);
+                }
+                else if (isInBold == true && isInUnderlined == false)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Italic | FontStyle.Bold);
+                }
+                else if (isInBold == false && isInUnderlined == false)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Italic);
+                }
+            }
+            else
+            {
+                if (isInBold == true && isInUnderlined == true)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Bold | FontStyle.Underline);
+                }
+                else if (isInBold == false && isInUnderlined == true)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Underline);
+                }
+                else if (isInBold == true && isInUnderlined == false)
+                {
+                    richTextBox1.SelectionFont = new Font(fontName, fontSize, FontStyle.Bold);
+                }
+            }
+        }
+
 
         //***** MenuStrip methods *****//
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
@@ -255,6 +301,11 @@ namespace SimpleTextEditor
             BoldText();
         }
 
+        private void italiqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ItalicText();
+        }
+
 
         //***** ToolStrip methods *****//
         private void toolStripButtonNewFile_Click(object sender, EventArgs e)
@@ -295,6 +346,11 @@ namespace SimpleTextEditor
         private void toolStripButtonBold_Click(object sender, EventArgs e)
         {
             BoldText();
+        }
+
+        private void toolStripButtonItalic_Click(object sender, EventArgs e)
+        {
+            ItalicText();
         }
     }
 }
