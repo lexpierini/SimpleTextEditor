@@ -217,8 +217,9 @@
             // centréToolStripMenuItem
             // 
             this.centréToolStripMenuItem.Name = "centréToolStripMenuItem";
-            this.centréToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.centréToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.centréToolStripMenuItem.Text = "Centré";
+            this.centréToolStripMenuItem.Click += new System.EventHandler(this.centréToolStripMenuItem_Click);
             // 
             // droiteToolStripMenuItem
             // 
@@ -390,6 +391,7 @@
             this.toolStripButtonCentralize.Name = "toolStripButtonCentralize";
             this.toolStripButtonCentralize.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonCentralize.Text = "Centrer";
+            this.toolStripButtonCentralize.Click += new System.EventHandler(this.toolStripButtonCentralize_Click);
             // 
             // toolStripButtonRightAlign
             // 
